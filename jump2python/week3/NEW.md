@@ -1,4 +1,4 @@
-## 알게 된 것
+# 알게 된 것
 
 ### 함수의 입력으로 1="hi" 같이 숫자를 앞에 쓰면 인식하지 못한다
 https://docs.python.org/3/reference/lexical_analysis.html#identifiers
