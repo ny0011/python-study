@@ -41,3 +41,31 @@ from ..sound.echo import echo_test
 # 절대 경로
 from game.sound.echo import echo_test
 ```
+
+### 예외 처리
+- finally : 항상 실행됨 
+```
+f = open('foo.txt','w')
+try: 
+    pass
+finally:
+    f.close()
+```
+- 다중 예외 처리 : ()로 묶기
+```
+try:
+    a = [1,2]
+    print(a[3])
+    4/0
+except (ZeroDivisionError, IndexError) as e:
+    print(e)
+```
+- try ~ else
+```
+try:
+except: # error is occured
+else: # no error
+```
+- NotImplementedError : 파이썬 내장 오류
+- 
+
