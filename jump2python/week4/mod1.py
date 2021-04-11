@@ -12,7 +12,7 @@ class FourCal:
     def div(self):
         try:
             return self.first / self.second
-        except ZeroDivisionError as e:
+        except (ZeroDivisionError, IndexError) as e:
             print(f"ERROR: {e}")
             return 0
         
@@ -44,4 +44,5 @@ if __name__ == "__main__":
 
     c = FourCal(4,0)
     print(c.div())
+    print()
     print(c.defaultvalue)

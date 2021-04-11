@@ -67,5 +67,24 @@ except: # error is occured
 else: # no error
 ```
 - NotImplementedError : 파이썬 내장 오류
-- 
 
+### relative
+- ..마다 폴더 한 칸 올라감
+```
+a
+ㄴ aa
+    ㄴ aaa.py
+ㄴ bb
+    ㄴ bbb
+        ㄴ cccc.py
+
+cccc.py에서 aaa.py를 가려면
+from ....aa import aaa
+를 하면 되는듯
+```
+```
+그리고 ImportError: attempted relative import beyond top-level package 가 발생하면
+a로 가서 
+python -m a.bb.bbb.cccc 를 실행하면 됨.
+```
+https://blog.doosikbae.com/52
